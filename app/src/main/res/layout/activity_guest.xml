@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/travel_wallpaper"
+    tools:context=".GuestActivity">
+
+    <Button
+        android:id="@+id/loginBTN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/button_background"
+        tools:text="@string/loginBtn"
+        android:textSize="20sp"
+        android:text="@string/loginBtn"/>
+    <Button
+        android:id="@+id/registerBtn"
+        android:text="@string/register"
+        android:textSize="20sp"
+        tools:text="@string/register"
+        android:layout_alignTop="@+id/loginBTN"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+
+        android:paddingEnd="10dp"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>
