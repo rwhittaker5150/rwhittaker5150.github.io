@@ -31,5 +31,6 @@
     <string name="UpdateButton">Update</string>
     <string name="LoadButton">Load</string>
     <string name="FindButton">Find</string>
+    <string name="customerId">Customer Id</string>
 
 </resources>

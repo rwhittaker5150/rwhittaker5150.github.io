@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import twu.whittaker.UserInfo.UserDbActions;
+
 
 public class MainActivity extends Activity {
 
@@ -21,6 +23,7 @@ public class MainActivity extends Activity {
 
         //  Image and Text
         ImageView imageView = findViewById(R.id.world);
+        imageView.setOnClickListener( view -> onClick() );
         TextView textView = findViewById(R.id.welcome);
 
         //  Animation of the world image
@@ -42,5 +45,11 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, GuestActivity.class);
         startActivity(intent);
 
+    }
+
+    //  On click listener add to the world image
+    private void onClick(){
+        Intent intent = new Intent( this, UserDbActions.class );
+        startActivity( intent );
     }
 }

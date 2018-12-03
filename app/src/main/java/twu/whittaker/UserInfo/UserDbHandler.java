@@ -22,7 +22,7 @@ public class UserDbHandler extends SQLiteOpenHelper{
     private static final String COLUMN_PASSWORD = "Password";
     private SQLiteDatabase db;
 
-    //  Public Selected User Object to care over after login
+    //  Public Selected User Object to carry over after login
     public UserInfo selectedUserInfo;
 
     //  Initialize the Database
@@ -56,7 +56,10 @@ public class UserDbHandler extends SQLiteOpenHelper{
             String result_4 = cursor.getString( 4 );
             String result_5 = cursor.getString( 5 );
             String result_6 = cursor.getString( 6 );
-            result.append( String.valueOf( result_0 ) ).append( " " ).append( result_1 ).append( " " ).append( result_2 ).append( " " ).append( result_3 ).append( " " ).append( result_4 ).append( " " ).append( result_5 ).append( " " ).append( result_6 ).append( System.getProperty( "line.separator" ) );
+            result.append( String.valueOf( result_0 ) ).append( " " ).append( result_1 ).append( " " )
+                    .append( result_2 ).append( " " ).append( result_3 ).append( " " ).append( result_4 )
+                    .append( " " ).append( result_5 ).append( " " ).append( result_6 )
+                    .append( System.getProperty( "line.separator" ) );
 
         }
         cursor.close();
@@ -65,7 +68,7 @@ public class UserDbHandler extends SQLiteOpenHelper{
     }
 
     //  Adds a new user
-    public void addHandler(UserInfo selectedUserInfo){
+   public void addHandler(UserInfo selectedUserInfo){
         ContentValues values = new ContentValues(  );
         values.put( COLUMN_ID, selectedUserInfo.getCustomerId() );
         values.put( COLUMN_FIRSTNAME, selectedUserInfo.getFirstName() );

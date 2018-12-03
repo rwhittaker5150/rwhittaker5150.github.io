@@ -13,7 +13,6 @@ import twu.whittaker.UserInfo.UserInfo;
 
 public class RegistrationActivity extends Activity {
 
-    private EditText editTxtEmail;
     private EditText editTxtUsr;
     private EditText editTxtPwd;
     private EditText editTxtCPwd;
@@ -31,7 +30,7 @@ public class RegistrationActivity extends Activity {
         //  Get the user's input
         EditText editTxtFn = findViewById( R.id.editTxtFN );
         EditText editTxtLn = findViewById( R.id.editTxtLN );
-        editTxtEmail = findViewById( R.id.editTxtEmail);
+        EditText editTxtEmail = findViewById( R.id.editTxtEmail );
         editTxtUsr = findViewById( R.id.editTxtUsr);
         editTxtPwd = findViewById( R.id.editTxtPwd);
         editTxtCPwd = findViewById( R.id.editTxtCPwd );
@@ -79,13 +78,14 @@ public class RegistrationActivity extends Activity {
                 editTxtPwd.setText( "" );
                 editTxtCPwd.setText( "" );
 
-                //  Go to the login page
-                Intent intent = new Intent( this, LoginActivity.class );
-
                 //  Display a message that the user was registered
                 Toast.makeText( this, "Registration was successful!  Please login now with your new account", Toast.LENGTH_LONG ).show();
+                //  Go to the login page
+                Intent intent = new Intent( this, LoginActivity.class );
+                startActivity( intent );
             }
         }
+
     }
 
     public void onCancelClick(View view){
