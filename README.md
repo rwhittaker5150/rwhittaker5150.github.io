@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/rwhittaker5150/rwhittaker5150.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -35,3 +36,14 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+=======
+# rwhittaker5150.github.io
+Travel with Us
+
+Artifact Origin: 	CS-250 Software Development Lifecycle
+
+Artifact Name:	Java Web Based Travel Application Slideshow
+
+This is my capstone project for my final class.  I am taking a java based program ran in windows and turning it into an application to run on an android operating system.
+
+>>>>>>> refs/heads/master
