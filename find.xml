@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '...\app\src\main\java\test\testtravel\GuestActivity.java [app]'" />
-    <option name="defaultScopeName" value="File '...\app\src\main\java\test\testtravel\GuestActivity.java [app]'" />
-    <option name="SEARCH_SCOPE" value="File '...\app\src\main\java\test\testtravel\GuestActivity.java [app]'" />
+    <option name="customScope" value="Project 'TravelWithUs'" />
+    <option name="defaultScopeName" value="Project 'TravelWithUs'" />
+    <option name="SEARCH_SCOPE" value="Project 'TravelWithUs'" />
   </component>
 </application>
