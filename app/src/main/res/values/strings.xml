@@ -32,5 +32,6 @@
     <string name="LoadButton">Load</string>
     <string name="FindButton">Find</string>
     <string name="customerId">Customer Id</string>
+    <string name="Description" translatable="false">Welcome to Travel With Us!  If you would like to search for some of our finest destinations please click the search button below.  You can also register with us to save your searches or mark them as your favorite destinations.  Thank you for Traveling With Us!</string>
 
 </resources>

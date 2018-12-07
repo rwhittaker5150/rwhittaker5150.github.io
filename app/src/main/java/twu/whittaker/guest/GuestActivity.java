@@ -1,9 +1,13 @@
-package twu.whittaker;
+package twu.whittaker.guest;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import twu.whittaker.R;
+import twu.whittaker.login.LoginActivity;
+import twu.whittaker.register.RegistrationActivity;
 
 public class GuestActivity extends Activity {
 

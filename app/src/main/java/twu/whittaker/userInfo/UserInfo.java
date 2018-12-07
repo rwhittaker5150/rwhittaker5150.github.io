@@ -1,4 +1,4 @@
-package twu.whittaker.UserInfo;
+package twu.whittaker.userInfo;
 
 public class UserInfo {
     //  Fields

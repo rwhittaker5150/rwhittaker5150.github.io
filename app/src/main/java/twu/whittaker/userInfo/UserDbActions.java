@@ -1,4 +1,4 @@
-package twu.whittaker.UserInfo;
+package twu.whittaker.userInfo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 
 import twu.whittaker.R;
+import twu.whittaker.register.RegistrationActivity;
 
 public class UserDbActions extends Activity {
 
@@ -19,8 +20,7 @@ public class UserDbActions extends Activity {
     // Handles the load button click and returns the menu items
     public void onLoadClick(View view) {
         TextView newText = findViewById( R.id.menuTextView );
-        UserDbHandler userDbHandler = new UserDbHandler( this, null, null, 1 );
-        newText.setText( userDbHandler.loadHandler() );
+        UserDbHandler userDbHandler = new UserDbHandler(this, null, null, 1);
+        newText.setText(userDbHandler.loadHandler());
     }
-
 }

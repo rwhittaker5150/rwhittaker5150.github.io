@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/travel_wallpaper"
-    tools:context=".UserInfo.UserDbActions">
+    tools:context=".userInfo.UserDbActions">
 
     <Button
         android:id="@+id/loadNames"

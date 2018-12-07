@@ -4,13 +4,15 @@ package twu.whittaker;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import twu.whittaker.UserInfo.UserDbActions;
+import twu.whittaker.guest.GuestActivity;
+import twu.whittaker.userInfo.UserDbActions;
 
 
 public class MainActivity extends Activity {
@@ -23,7 +25,7 @@ public class MainActivity extends Activity {
 
         //  Image and Text
         ImageView imageView = findViewById(R.id.world);
-        imageView.setOnClickListener( view -> onClick() );
+        imageView.setOnClickListener(this::onClickImage);
         TextView textView = findViewById(R.id.welcome);
 
         //  Animation of the world image
@@ -40,16 +42,15 @@ public class MainActivity extends Activity {
 
     }
 
-    //  Opens the guest activity page
-    private void openGuestActivity(){
-        Intent intent = new Intent(this, GuestActivity.class);
-        startActivity(intent);
-
-    }
-
     //  On click listener add to the world image
-    private void onClick(){
+    private void onClickImage(View view) {
         Intent intent = new Intent( this, UserDbActions.class );
         startActivity( intent );
+    }
+
+    //  Opens the guest activity page
+    private void openGuestActivity(){
+        Intent intent = new Intent(MainActivity.this, GuestActivity.class);
+        startActivity(intent);
     }
 }

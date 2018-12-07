@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/travel_wallpaper"
-    tools:context=".RegistrationActivity">
+    android:background="@drawable/grunge_travel_background"
+    tools:context=".register.RegistrationActivity">
 
     <TextView
         android:id="@+id/textViewFn"
@@ -29,11 +29,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_firstname"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewFn"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewLn"
@@ -56,11 +58,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_lastname"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewLn"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtFN"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtFN" />
 
     <TextView
         android:id="@+id/textViewEmail"
@@ -95,11 +99,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_username"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewUser"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtEmail"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtEmail" />
 
     <TextView
         android:id="@+id/textViewPwd"
@@ -122,11 +128,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewPwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtUsr"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtUsr" />
 
     <EditText
         android:id="@+id/editTxtEmail"
@@ -137,11 +145,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtLN"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtLN" />
 
     <EditText
         android:id="@+id/editTxtCPwd"
@@ -152,11 +162,13 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/registration_password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewCPwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtPwd"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPwd" />
 
     <TextView
         android:id="@+id/textViewCPwd"
@@ -177,9 +189,11 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="117dp"
         android:layout_marginBottom="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/button_background"
         android:onClick="onRegisterClick"
         android:text="@string/register"
-        android:background="@drawable/button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtCPwd" />
@@ -191,6 +205,8 @@
         android:layout_marginTop="117dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:background="@drawable/button_background"
         android:onClick="onCancelClick"
         android:text="@string/registration_cancel"

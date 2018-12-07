@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/travel_wallpaper"
-    tools:context=".LoginActivity">
+    android:background="@drawable/classic_travel"
+    tools:context=".login.LoginActivity">
 
     <TextView
         android:id="@+id/login_title"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="110dp"
         android:text="@string/user_name"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -60,20 +60,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="100dp"
 
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/user_name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/login_title"
-        android:importantForAutofill="no"
         tools:targetApi="o" />
 
     <EditText
@@ -110,6 +108,7 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
 
+        android:textSize="20sp"
         android:text="@string/login_submit_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -127,6 +126,7 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
 
+        android:textSize="20sp"
         android:text="@string/login_cancel_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

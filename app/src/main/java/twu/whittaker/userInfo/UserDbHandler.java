@@ -1,8 +1,7 @@
-package twu.whittaker.UserInfo;
+package twu.whittaker.userInfo;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -34,13 +33,18 @@ public class UserDbHandler extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db){
         String CREATE_TABLE  = " CREATE TABLE " + TABLE_NAME + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COLUMN_FIRSTNAME + " TEXT, " + COLUMN_LASTNAME + " TEXT, " + COLUMN_EMAIL + " TEXT, " +
-                COLUMN_USERNAME + " TEXT UNIQUE, " +
-                COLUMN_FAVORITELOCAL + " TEXT, " + COLUMN_PASSWORD + " TEXT " + " )";
+                COLUMN_FIRSTNAME + " VARCHAR, " + COLUMN_LASTNAME + " VARCHAR, " + COLUMN_EMAIL + " VARCHAR, " +
+                COLUMN_USERNAME + " VARCHAR UNIQUE, " +
+                COLUMN_FAVORITELOCAL + " VARCHAR, " + COLUMN_PASSWORD + " VARCHAR )";
         db.execSQL( CREATE_TABLE );
     }
 
     public void onUpgrade(SQLiteDatabase db, int i, int il){
+        //  Drop older table if exist
+        db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME);
+
+        //  Create tables again
+        onCreate(db);
     }
 
     public String loadHandler(){
@@ -92,8 +96,11 @@ public class UserDbHandler extends SQLiteOpenHelper{
         values.put( COLUMN_USERNAME, selectedUserInfo.getUserid() );
         values.put( COLUMN_PASSWORD, selectedUserInfo.getPassword() );
        // values.put( COLUMN_FAVORITELOCAL, selectedUserInfo.getFavLocation() );
+        //  Gets the data repository in write mode.
         db = this.getWritableDatabase();
+        //  Insert the new row, returning the primary key value of the new row.
         db.insert( TABLE_NAME, null, values );
+        //  Closes the database connection
         db.close();
     }
 

@@ -1,4 +1,4 @@
-package twu.whittaker;
+package twu.whittaker.login;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import twu.whittaker.UserInfo.UserDbHandler;
-import twu.whittaker.UserInfo.UserInfo;
+import twu.whittaker.R;
+import twu.whittaker.guest.GuestActivity;
+import twu.whittaker.userInfo.UserDbHandler;
+import twu.whittaker.userInfo.UserInfo;
 
 public class LoginActivity extends Activity {
-    private UserInfo selectUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class LoginActivity extends Activity {
         String login_password = pwdText.getText().toString();
 
         //  Calls the method to search for by userid and password
-        selectUser = userDbHandler.loginHandler( userName, login_password );
+        UserInfo selectUser = userDbHandler.loginHandler(userName, login_password);
 
         //  If the selected user is not null then display log in message otherwise display an error
         if(selectUser != null){

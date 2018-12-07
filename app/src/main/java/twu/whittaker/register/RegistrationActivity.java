@@ -1,39 +1,28 @@
-package twu.whittaker;
+package twu.whittaker.register;
+
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import twu.whittaker.UserInfo.UserDbHandler;
-import twu.whittaker.UserInfo.UserInfo;
-
+import twu.whittaker.R;
+import twu.whittaker.guest.GuestActivity;
+import twu.whittaker.login.LoginActivity;
+import twu.whittaker.userInfo.UserDbHandler;
+import twu.whittaker.userInfo.UserInfo;
 
 public class RegistrationActivity extends Activity {
-
-    private EditText editTxtUsr;
-    private EditText editTxtPwd;
-    private EditText editTxtCPwd;
-    private UserInfo newUser;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_registration );
-    }
-
     //  Handles the Registration Button Click Event
     public void onRegisterClick(View view){
         //  Get the user's input
         EditText editTxtFn = findViewById( R.id.editTxtFN );
         EditText editTxtLn = findViewById( R.id.editTxtLN );
         EditText editTxtEmail = findViewById( R.id.editTxtEmail );
-        editTxtUsr = findViewById( R.id.editTxtUsr);
-        editTxtPwd = findViewById( R.id.editTxtPwd);
-        editTxtCPwd = findViewById( R.id.editTxtCPwd );
+        EditText editTxtUsr = findViewById(R.id.editTxtUsr);
+        EditText editTxtPwd = findViewById(R.id.editTxtPwd);
+        EditText editTxtCPwd = findViewById(R.id.editTxtCPwd);
 
 
         String firstName = editTxtFn.getText().toString();
@@ -58,7 +47,7 @@ public class RegistrationActivity extends Activity {
             UserDbHandler userDbHandler = new UserDbHandler(this, null, null, 1);
 
             //  Calls the method to search for the user by userName
-            newUser = userDbHandler.checkExistsHandler( userid );
+            UserInfo newUser = userDbHandler.checkExistsHandler(userid);
 
             // If user exist in the database return an error
             if(newUser != null){
@@ -85,7 +74,6 @@ public class RegistrationActivity extends Activity {
                 startActivity( intent );
             }
         }
-
     }
 
     public void onCancelClick(View view){
