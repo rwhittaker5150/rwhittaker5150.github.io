@@ -1,8 +1,7 @@
 package twu.whittaker;
 
-
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -11,22 +10,22 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import twu.whittaker.guest.GuestActivity;
-import twu.whittaker.userInfo.UserDbActions;
+import twu.whittaker.SQLite.SQLiteHelper;
+import twu.whittaker.login.LoginActivity;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_main );
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         //  Image and Text
-        ImageView imageView = findViewById(R.id.world);
+        ImageView imageView = findViewById(R.id.imgWorld);
         imageView.setOnClickListener(this::onClickImage);
-        TextView textView = findViewById(R.id.welcome);
+        TextView textView = findViewById(R.id.txtWelcome);
 
         //  Animation of the world image
         Animation animation = AnimationUtils.loadAnimation( getApplicationContext(),R.anim.rotate_anim );
@@ -37,20 +36,18 @@ public class MainActivity extends Activity {
         textView.startAnimation( animation1 );
 
         //  Initialize the button
-        Button startTravelBTN = findViewById(R.id.startTravel);
-        startTravelBTN.setOnClickListener((v) -> openGuestActivity());
-
+        Button startTravelBTN = findViewById(R.id.btnTravel);
+        startTravelBTN.setOnClickListener((v) -> openRegisterActivity());
     }
 
-    //  On click listener add to the world image
-    private void onClickImage(View view) {
-        Intent intent = new Intent( this, UserDbActions.class );
-        startActivity( intent );
-    }
-
-    //  Opens the guest activity page
-    private void openGuestActivity(){
-        Intent intent = new Intent(MainActivity.this, GuestActivity.class);
+    private void openRegisterActivity() {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
+    }
+
+    private void onClickImage(View view) {
+        Intent intent = new Intent(this, SQLiteHelper.class);
+        startActivity(intent);
+
     }
 }

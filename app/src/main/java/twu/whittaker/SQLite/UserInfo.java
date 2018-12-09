@@ -1,4 +1,4 @@
-package twu.whittaker.userInfo;
+package twu.whittaker.SQLite;
 
 public class UserInfo {
     //  Fields
@@ -6,21 +6,18 @@ public class UserInfo {
     private String firstName;
     private String lastName;
     private String email;
-    private String userid;
-    //private String favLocation;
+    private String userName;
     private String password;
 
     //  Constructors
     public UserInfo() {}
-    public UserInfo(int CustomerId, String FirstName, String LastName, String E_mail, String Userid, String Pwd) {
+    public UserInfo(int CustomerId, String FirstName, String LastName, String Email, String UserName, String Password){
         this.customerId = CustomerId;
         this.firstName = FirstName;
         this.lastName = LastName;
-        this.email = E_mail;
-        this.userid = Userid;
-        this.password = Pwd;
-        //this.favLocation = FavLocation;
-
+        this.email = Email;
+        this.userName = UserName;
+        this.password = Password;
     }
 
     //  Properties
@@ -56,23 +53,13 @@ public class UserInfo {
         this.email = email;
     }
 
-
-    public String getUserid() {
-        return userid;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
-/*
-    public String getFavLocation() {
-        return favLocation;
-    }
-
-    public void setFavLocation(String favLocation) {
-        this.favLocation = favLocation;
-    }
- */
 
     public String getPassword() {
         return password;
@@ -81,4 +68,5 @@ public class UserInfo {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

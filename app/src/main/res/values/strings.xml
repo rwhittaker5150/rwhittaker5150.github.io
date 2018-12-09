@@ -1,37 +1,13 @@
 <resources>
-    <string name="app_name">Travel With Us</string>
-    <string name="world">World</string>
-    <string name="welcome">Welcome to Travel With Us!</string>
-    <string name="startTravelBTN">Start Travel</string>
-    <string name="loginBtn">Login</string>
-    <string name="register">Register</string>
-    <string name="app_title">Welcome to Travel with Us</string>
-    <string name="user_name">Username</string>
-    <string name="user_password">Password</string>
-    <string name="login_submit_button">Submit</string>
-    <string name="login_cancel_button">Cancel</string>
-
-    <!-- Strings related to login -->
-    <string name="registration_title">Registration - Travel With Us</string>
-    <string name="registration_firstname">First Name</string>
-    <string name="registration_lastname">Last Name</string>
-    <string name="registration_email">Email Address</string>
-    <string name="registration_username">Username</string>
-    <string name="registration_password">Password</string>
-    <string name="registration_register">Register</string>
-    <string name="registration_cancel">Cancel</string>
-    <string name="mongodbConnection"><![CDATA[mongodb://TravelWithUs@stitch.mongodb.com:27020/?authMechanism=PLAIN&authSource=%24external&ssl=true&appName=travelwithus-xoweh:mongodb-atlas:api-key]]></string>
-    <string name="sqlTitle">User Display</string>
-    <string name="deleteBtn">Delete</string>
-    <string name="listBtn">List All</string>
-    <string name="registrationEmail">E-mail</string>
-    <string name="registration_confirm_password">Confirm Password</string>
-    <string name="AddButton">Add</string>
-    <string name="DeleteButton">Delete</string>
-    <string name="UpdateButton">Update</string>
-    <string name="LoadButton">Load</string>
-    <string name="FindButton">Find</string>
-    <string name="customerId">Customer Id</string>
-    <string name="Description" translatable="false">Welcome to Travel With Us!  If you would like to search for some of our finest destinations please click the search button below.  You can also register with us to save your searches or mark them as your favorite destinations.  Thank you for Traveling With Us!</string>
+    <string name="app_name">travel</string>
+    <string name="imgWorld">Globe</string>
+    <string name="splash_TxtWelcome">Welcome To Travel With Us!</string>
+    <string name="splash_btnTravel">Start Travel</string>
+    <string name="login_Title">Welcome To Travel With Us</string>
+    <string name="login_TxtUsername">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_btnlogin">login</string>
+    <string name="login_btnLogin">Login</string>
+    <string name="reg_txt_title">Registration</string>
 
 </resources>

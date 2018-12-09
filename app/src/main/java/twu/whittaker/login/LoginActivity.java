@@ -1,58 +1,74 @@
 package twu.whittaker.login;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import twu.whittaker.R;
-import twu.whittaker.guest.GuestActivity;
-import twu.whittaker.userInfo.UserDbHandler;
-import twu.whittaker.userInfo.UserInfo;
+import twu.whittaker.SQLite.SQLiteHelper;
+import twu.whittaker.SQLite.UserInfo;
+import twu.whittaker.search.SearchActivity;
+import twu.whittaker.register.RegisterActivity;
 
-public class LoginActivity extends Activity {
+
+public class LoginActivity extends AppCompatActivity {
+
+    public UserInfo selectUser;
+    private String userLogInName;
+
+    Button SignUpBtn;
+    Button Login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_login );
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
+        //  Add a click listener to the signup button
+        SignUpBtn = findViewById(R.id.btnSignUp);
+        SignUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //  Opens the Registration Page
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //  Add a click listener to the login button;
+        Login = findViewById(R.id.btnLogin);
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SQLiteHelper sqLiteHelper = new SQLiteHelper(LoginActivity.this, null, null, 1);
+                EditText login = findViewById(R.id.edTxtUser);
+                EditText password = findViewById(R.id.edTxtPwd);
+                String loginName = login.getText().toString();
+                String loginPwd = password.getText().toString();
+                //  Calls the method to search for the user by userid and password
+                selectUser = sqLiteHelper.loginHandler(loginName, loginPwd);
+                //  If the selected user is not null then display an error message
+                if (selectUser != null){
+                    sqLiteHelper.selectedUserInfo = selectUser;
+                    String userName = selectUser.getFirstName();
+                    userLogInName = selectUser.getUserName();
+                    login.setVisibility(View.INVISIBLE);
+
+                    //  Open the search page to begin your searches
+                    Intent intent = new Intent(LoginActivity.this, SearchActivity.class);
+                    startActivity(intent);
+
+                    Toast.makeText(LoginActivity.this, "You are now logged into Travel With Us! Welcome, " + userName + "!", Toast.LENGTH_LONG).show();
+                } else {
+                    //  If the user cannot be found display an error message
+                    Toast.makeText(LoginActivity.this, "The login information cannot be found.  Please try again or register. ", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
     }
-
-    //  Login button click event
-    public void onLoginClick(View view){
-        UserDbHandler userDbHandler = new UserDbHandler(this, null, null, 1);
-        EditText loginText = findViewById( R.id.userName);
-        EditText pwdText = findViewById( R.id.login_password );
-        String userName = loginText.getText().toString();
-        String login_password = pwdText.getText().toString();
-
-        //  Calls the method to search for by userid and password
-        UserInfo selectUser = userDbHandler.loginHandler(userName, login_password);
-
-        //  If the selected user is not null then display log in message otherwise display an error
-        if(selectUser != null){
-            userDbHandler.selectedUserInfo = selectUser;
-            userName = selectUser.getFirstName();
-            String userLoginName = selectUser.getUserid();
-            loginText.setVisibility( View.INVISIBLE );
-            Intent intent = new Intent( this, LoginActivity.class );
-            intent.putExtra( "User Name", userLoginName );
-            startActivity( intent );
-            Toast.makeText( this, "You are now logged into Travel With Us, " + userName + "!", Toast.LENGTH_LONG ).show();
-        } else {
-            //  If the user cannont be found display an error
-            Toast.makeText( this, "The login name and/or password are incorrect!  Please try again. ", Toast.LENGTH_LONG ).show();
-        }
-
-    }
-
-    //  Cancel onClick vent
-    public void onCancelClick(View view){
-        Intent intent = new Intent( this, GuestActivity.class );
-        startActivity( intent );
-    }
-
 }
