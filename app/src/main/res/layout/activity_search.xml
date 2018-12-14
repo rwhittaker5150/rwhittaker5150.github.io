@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/vintage_plain"
         tools:context=".search.SearchActivity">
+
+    <!-- Divider code in ListView
+         Selector Code in ListView in green color
+         -->
+    <ListView
+        android:id="@+id/destListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@array/LocationArray"
+        android:divider="#f00"
+        android:dividerHeight="1dp"
+        android:listSelector="#0f0"
+
+    />
 
 </android.support.constraint.ConstraintLayout>
