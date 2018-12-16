@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/vintage_plain"
@@ -124,13 +123,13 @@
                               android:layout_margin="3dp"
                               android:layout_column="2"
                               android:textStyle="bold"
-                              android:gravity="center"
                               android:textColor="#000000"
                               android:scrollHorizontally="false"
                               android:maxLines="10"
                               android:layout_weight="1"
                               android:ellipsize="none"
-                              android:text="@string/gc_description" android:textAlignment="viewStart"
+                              android:text="@string/gc_description"
+                              android:textAlignment="viewStart"
                               android:textSize="12sp"/>
 
                 </TableRow>
@@ -162,7 +161,6 @@
                               android:layout_margin="3dp"
                               android:layout_column="2"
                               android:textStyle="bold"
-                              android:gravity="center"
                               android:textColor="#000000"
                               android:scrollHorizontally="false"
                               android:maxLines="10"
@@ -200,7 +198,6 @@
                               android:layout_margin="3dp"
                               android:layout_column="2"
                               android:textStyle="bold"
-                              android:gravity="center"
                               android:textColor="#000000"
                               android:scrollHorizontally="false"
                               android:maxLines="10"
@@ -238,7 +235,6 @@
                               android:layout_margin="3dp"
                               android:layout_column="2"
                               android:textStyle="bold"
-                              android:gravity="center"
                               android:textColor="#000000"
                               android:scrollHorizontally="false"
                               android:maxLines="10"

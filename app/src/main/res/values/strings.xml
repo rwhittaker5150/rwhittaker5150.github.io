@@ -6,16 +6,25 @@
     <string name="login_Title">Welcome To Travel With Us</string>
     <string name="login_TxtUsername">Username</string>
     <string name="login_password">Password</string>
-    <string name="login_btnlogin">login</string>
+    <string name="login_btnSignup">Signup</string>
     <string name="login_btnLogin">Login</string>
     <string name="reg_txt_title">Registration</string>
     <string name="app_label">Search</string>
     <string name="search_hint">Search for destinations</string>
     <string name="search">Location Search</string>
+    <string name="reg_firstName">First Name</string>
+    <string name="reg_lastName">Last Name</string>
+    <string name="reg_email">Email Address</string>
+    <string name="reg_UserName">Username</string>
+    <string name="reg_Password">Password</string>
+    <string name="reg_ConPass">Confirm Password</string>
+    <string name="reg_register">Register</string>
+    <string name="reg_cancel">Cancel</string>
+    <string name="user_dash">Load User</string>
+
 
 
     <!-- Destination strings for destination names, prices, and description-->
-
     <string name="destination">Destination</string>
     <string name="price">Price</string>
     <string name="description">Description</string>
