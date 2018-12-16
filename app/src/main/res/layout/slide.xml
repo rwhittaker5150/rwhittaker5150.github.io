@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slideLinearLayout"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+            android:id="@+id/txtTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title here"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/slideImage"
+        android:layout_width="342dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="10dp" />
+    <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title here"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Description Here" android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/txtPriceLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Price Label Here" android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Price Here" android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/txtContactLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Contact Label" android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Contact Here" android:textColor="@android:color/black"/>
+
+
+
+</LinearLayout>

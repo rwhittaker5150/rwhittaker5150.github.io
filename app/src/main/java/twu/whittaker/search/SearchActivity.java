@@ -3,11 +3,14 @@ package twu.whittaker.search;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import twu.whittaker.R;
-import twu.whittaker.locations.*;
+import twu.whittaker.locations.aussie.AustraliaActivity;
+import twu.whittaker.locations.china.ChinaActivity;
+import twu.whittaker.locations.india.IndiaActivity;
+import twu.whittaker.locations.newzeal.NewZealandActivity;
+import twu.whittaker.locations.port.PortugalActivity;
+import twu.whittaker.locations.usa.AmericaActivity;
 
 public class SearchActivity extends AppCompatActivity {
 

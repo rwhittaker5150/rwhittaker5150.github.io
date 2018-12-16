@@ -26,12 +26,12 @@
         <activity android:name=".login.LoginActivity"/>
         <activity android:name=".register.RegisterActivity"/>
         <activity android:name=".UserDashboardActivity"/>
-        <activity android:name=".locations.AmericaActivity"/>
-        <activity android:name=".locations.ChinaActivity"/>
-        <activity android:name=".locations.NewZealandActivity"/>
-        <activity android:name=".locations.AustraliaActivity"/>
-        <activity android:name=".locations.PortugalActivity"/>
-        <activity android:name=".locations.IndiaActivity"/>
+        <activity android:name=".locations.usa.AmericaActivity"/>
+        <activity android:name=".locations.china.ChinaActivity"/>
+        <activity android:name=".locations.newzeal.NewZealandActivity"/>
+        <activity android:name=".locations.aussie.AustraliaActivity"/>
+        <activity android:name=".locations.port.PortugalActivity"/>
+        <activity android:name=".locations.india.IndiaActivity"/>
         <activity android:name=".search.SearchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
