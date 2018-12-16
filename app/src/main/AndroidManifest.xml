@@ -36,6 +36,10 @@
                     android:resource="@xml/searchable"/>
         </activity>
         <activity android:name=".UserDashboardActivity"/>
+        <activity android:name=".locations.AmericaActivity">
+        </activity>
+        <activity android:name=".locations.ChinaActivity">
+        </activity>
     </application>
 
 </manifest>

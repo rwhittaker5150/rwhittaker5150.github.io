@@ -21,8 +21,10 @@
             android:layout_gravity="center"
             android:textColor="@android:color/black"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="24dp" android:layout_marginStart="40dp"
-            app:layout_constraintStart_toEndOf="@+id/icon" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"/>
 
 </android.support.constraint.ConstraintLayout>

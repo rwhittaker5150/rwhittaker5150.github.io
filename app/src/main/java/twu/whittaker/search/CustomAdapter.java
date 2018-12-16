@@ -44,4 +44,5 @@ public class CustomAdapter extends BaseAdapter {
         icon.setImageResource(flags[i]);
         return view;
     }
+
 }

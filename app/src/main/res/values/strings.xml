@@ -12,8 +12,251 @@
     <string name="app_label">Search</string>
     <string name="search_hint">Search for destinations</string>
     <string name="search">Location Search</string>
-    <string-array name="LocationArray">
-        <item name="Paris">Paris, France</item>
-        <item name="Berlin">Berlin, Germany</item>
-    </string-array>
+
+
+    <!-- Destination strings for destination names, prices, and description-->
+
+    <string name="destination">Destination</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+
+    <!-- America -->
+    <string name="america_label">America\'s Top 5 Destinations</string>
+    <!-- New York -->
+    <string name="ny">New York City, NY</string>
+    <string name="ny_price">$294</string>
+    <string name="ny_description">
+        The largest and most populated city in the USA, New York City is often called the “city that never sleeps” because it is constantly buzzing with activity.
+    </string>
+
+    <!-- Grand Canyon -->
+    <string name="gc">Grand Canyon, AZ</string>
+    <string name="gc_price">$279</string>
+    <string name="gc_description">
+        Attracting millions of visitors every year, the Grand Canyon is one of the best places to visit in the USA. Located in northern Arizona, this massive natural wonder was carved by the Colorado River over a period of several million years.
+    </string>
+
+    <!-- Yellowstone -->
+    <string name="yellow">Yellowstone, WY</string>
+    <string name="yellow_price">$103</string>
+    <string name="yellow_description">
+        Yellowstone National Park was the world’s first national park, set aside in 1872 to preserve the vast number of geysers and hot springs, as well as to protect the incredible wildlife and rugged beauty of the area.
+    </string>
+
+    <!-- Maui -->
+    <string name="maui">Maui, HI</string>
+    <string name="maui_price">$355</string>
+    <string name="maui_description">
+        Nicknamed “The Valley Isle,” due to the great valley that lies between its two major volcanoes, Maui is known for its stunning natural beauty as well as its high-end luxury resorts and popular tourist attractions — a triple threat ranking the island among the world’s top vacation destinations.
+    </string>
+
+    <!-- Yosemite -->
+    <string name="yosemite">Yosemite, CA</string>
+    <string name="yosemite_price">$496</string>
+    <string name="yosemite_description">
+        One of the most visited national parks in the United States, Yosemite National Park is prized for its jaw-dropping beauty that comprises magnificent granite cliffs, mountains, waterfalls and glaciers.
+    </string>
+
+    <!--  Contact for American Destinations-->
+    <string name="us_contact">John Rich - jr@travelwithus.com (555) 444- 4444</string>
+
+    <!-- Australia -->
+    <string name="australia_label">Australia\'s Top 5 Destinations</string>
+    <!-- Sydney-->
+    <string name="sydney">Sydney, AU</string>
+    <string name="sy_price">$115</string>
+    <string name="sy_description">
+        Surrounded by the beautiful scenery of the Sydney Harbour and the Royal Botanic Gardens, the famous Opera House in Sydney is one of Australia’s most famous landmarks.
+    </string>
+
+    <!-- Cairns -->
+    <string name="Cairns">Cairns, AU</string>
+    <string name="cairns_price">$124</string>
+    <string name="cairns_description">
+        One of the top destinations for underwater explorers and scuba divers is the world’s largest barrier reef system, famously known as the Great Barrier Reef. Located in the Coral Sea, the Great Barrier Reef encompasses a huge area of more than 2,900 coral reefs and hundreds of islands and cays.
+    </string>
+
+    <!-- Yulara-->
+    <string name="yulara">Yulara, AU</string>
+    <string name="yulara_price">$500</string>
+    <string name="yulara_description">
+        One of the world’s largest monoliths, Ayers Rock is also one of the top tourist attractions in Australia. Located within the Uluru-Kata Tjuta National Park of the Northern Territory, this large sandstone formation stands more than 340 meters (1,100 feet) high.
+    </string>
+
+    <!-- Kakadu National Park -->
+    <string name="darwin">Darwin, AU</string>
+    <string name="darwin_price">$102</string>
+    <string name="darwin_description">
+        Located in Australia’s Northern Territory, about three hours north of Darwin, Kakadu is the country’s largest national park. There is a lot to see in Kakadu National Park, including a large concentration of Aboriginal rock art; some of which are estimated to be up to 20,000 years old.
+    </string>
+
+    <!-- Whitsunday Islands -->
+    <string name="whitsunday">Queensland, AU</string>
+    <string name="whitsunday_price">$256</string>
+    <string name="whitsunday_description"><![CDATA[ Most of the Whitsunday Islands are deserted, seven do have outstanding resorts on them, including the world-famous One&Only on Hayman Island, a favorite of celebrities and the rich and famous.
+    ]]></string>
+
+    <!-- Australia's contact agent -->
+    <string name="australia_contact">Ray Underbarb - ru@travelwithus.com  (555)111-1111</string>
+
+    <!-- China -->
+    <string name="china_label">Beijing\'s Top 5 Destinations</string>
+    <!-- Beijing -->
+    <string name="beijing">Beijing, China</string>
+    <string name="beijing_price">$137</string>
+    <string name="beijing_description">
+        The Forbidden City is one of the world’s great palaces, ranking right up there with the Kremlin, Buckingham Palace and Versailles. It is unarguably the most popular tourist attraction in Beijing, with the crowds to prove it.
+    </string>
+
+    <!-- Hong Kong -->
+    <string name="HK">Hong Kong, China</string>
+    <string name="hk_price">$101</string>
+    <string name="hk_description">
+        Nicknamed the Oriental Pearl, Hong Kong is one of Asia’s most traveled destinations thanks to its spectacular natural beauty and man-made marvels.
+    </string>
+
+    <!-- Xi'an -->
+    <string name="xian">Xi\'an, China</string>
+    <string name="xian_price">$60</string>
+    <string name="xian_description">
+        The history of Xi’an is one of its biggest draws. It was the start of the once indispensable Silk Road that made commerce between many countries in Eurasia possible. It was the imperial seat for no fewer than eleven dynasties, before the unification of China between 1000 BC and 1000 AD making it one of the Four Great Ancient Capitals of China.
+    </string>
+
+    <!-- Shanghai -->
+    <string name="shanghai">Shanghai, China</string>
+    <string name="sha_price">$106</string>
+    <string name="sha_description">
+        Located on the East China Sea and the mouth of the Yangtze River, Shanghai is the largest city and most developed city in China. Nearly a third of China’s exports come from the area and it attracts almost a quarter of all the country’s foreign investment, more than any single developing country.
+    </string>
+
+    <!-- Yangshuo -->
+    <string name="yangshuo">Yangshuo, China</string>
+    <string name="yan_price">$88</string>
+    <string name="yan_description">
+        Yangshuo was once a magnet for backpackers because of its cheap prices and laid-back atmosphere, but today it draws all sorts of travelers to enjoy its scenic beauty.
+    </string>
+
+    <!-- Beijing Contact Agent -->
+    <string name="yan_contact">Wang Fang - wf@travelwithus.com  (555) 222-2222</string>
+
+    <!-- India -->
+    <string name="in_label">India\'s Top 5 Destinations</string>
+    <!-- Rajasthan -->
+    <string name="Rajasthan">Rajasthan, India</string>
+    <string name="ra_price">$675</string>
+    <string name="ra_description">
+        Northwest India is where you’ll find the state of Rajasthan, which borders Pakistan and is home to the Thar Desert. Whether you’re interested in Rajput history or views of the Aravallis Mountains, Rajasthan contains some of the best places to visit in India.
+    </string>
+
+    <!-- Agra -->
+    <string name="Agra">Agra, India</string>
+    <string name="ag_price">$79</string>
+    <string name="ag_description">
+        Once the capital of the Mughal Empire, Agra is now home to the iconic structure known as the Taj Mahal. The white marble mausoleum was built in the 17th century, and it is widely regarded as a monument of love.
+    </string>
+
+    <!-- Kerala -->
+    <string name="ker">Kerala, India</string>
+    <string name="ker_price">$94</string>
+    <string name="ker_description">
+        The southwestern state of India known as Kerala is a place of tropical beauty. Palm trees, white sand beaches and eco-tourism are all big reasons to explore the region. Besides its famous backwaters, elegant houseboats and temple festivals, Kerala is also home to Thekkady, a tiger preserve which allows you to admire flora and fauna without crowds.
+    </string>
+
+    <!-- Varanasi -->
+    <string name="var">Varanasi, India</string>
+    <string name="var_price">$42</string>
+    <string name="var_description">
+        On the banks of the River Ganges is Varanasi, an ancient city known as the spiritual capital of India. The city’s history dates back for more than 3,000 years, making it one of the oldest continually inhabited cities on the planet.
+    </string>
+
+    <!-- Maharashtra -->
+    <string name="mah">Maharashtra, India</string>
+    <string name="mah_price">$139</string>
+    <string name="mah_description">
+        In the state of Maharashtra, you can explore the caves of both Ellora and Ajanta.  While the two cave complexes are two hours away from one another, it is well worth visiting both to compare these incredible attractions.
+    </string>
+
+    <!-- India's contact agent -->
+    <string name="inda_contact">Indranil Jayesh - ij@travelwithus.com (555) 333-3333</string>
+
+    <!-- New Zealand -->
+    <string name="newz_label">New Zealand\'s Top 5 Destinations</string>
+    <!-- Milford Sound -->
+    <string name="mil">Milford Sound, NZ</string>
+    <string name="mil_price">$249</string>
+    <string name="mil_description">
+        Milford Sound is among the most famous tourist attractions in New Zealand. Lying at the most northern and accessible end of Fiordland National Park, Milford Sound offers some of the world’s most staggering coastal scenery with its dramatic peaks and dark blue waters.
+    </string>
+
+    <!-- Bay of Islands -->
+    <string name="bay">Bay of Islands, NZ</string>
+    <string name="bay_price">$90</string>
+    <string name="bay_description">
+        The Bay of Islands is one of the most popular holiday destinations in New Zealand. The picturesque area contains 144 islands, many secluded bays and some great sandy beaches.
+    </string>
+
+    <!-- North Island -->
+    <string name="ni">North Island, NZ</string>
+    <string name="ni_price">$112</string>
+    <string name="ni_description">
+        In the Tongariro National Park, located in the center of the North Island, is the Tongariro Alpine Crossing. This crossing is a day-long hike that covers Mount Tongariro itself and passes along the base of Mount Ngauruhoe.
+    </string>
+
+    <!-- Rotorua -->
+    <string name="wai">Rotorua, NZ</string>
+    <string name="wai_price">$87</string>
+    <string name="wai_description">
+        Just outside of Rotorua, on the North Island, is the incredible destination of Wai-o-tapu. This park is filled with geothermal activity, and you can hike through volcanic landscapes that look more like outer space than the rest of New Zealand.
+    </string>
+
+    <!-- Paringa -->
+    <string name="par">Paringa, NZ</string>
+    <string name="par_price">$74</string>
+    <string name="par_description">
+        This glacier, located within Westland National Park in the southwest, is one of the world’s most accessible. Visitors can walk right up to the foot of the massive glacier or take a helicopter ride over the dazzling Ice Age remnant. Together with Fox Glacier it is one of South Westland’s major drawcards for tourists.
+    </string>
+
+    <!-- New Zealand contact agent -->
+    <string name="nz_contact">Jack William - jw@travelwithus.com (555) 555-5555</string>
+
+    <!-- Portugal -->
+    <string name="prt_label">Portugal\'s Top 5 Destinations</string>
+    <!-- Porto -->
+    <string name="port">Porto, PT</string>
+    <string name="port_price">$103</string>
+    <string name="port_description">
+        After Lisbon, Porto is Portugal’s second largest city. It’s a city that is fast becoming a top travel destination in western Europe. Explore Porto from its narrow streets in the old town section of Ribeira to the grand plazas in the newer sections.
+    </string>
+
+    <!-- Douro Valley -->
+    <string name="duo">Douro Valley, PT</string>
+    <string name="duo_price">$172</string>
+    <string name="duo_description">
+        The Douro Valley was just made to grace picture postcards! Its scenic landscapes are just one of the reasons Travel +Leisure magazine named it No. 8 on its list of places to visit in 2017.
+    </string>
+
+    <!-- Guimaraes -->
+    <string name="gui">Guimaraes, PT</string>
+    <string name="gui_price">$79</string>
+    <string name="gui_description">
+        Sometimes it’s fun to go back to the beginning of things, in which case you’ll want to visit Guimaraes, regarded as the birthplace of Portugal. Here you’ll find Gothic buildings, a medieval center with narrow cobblestone streets (be sure to wear comfortable walking shoes), pretty squares with outdoor cafes and, of course, lots of history in this traditional town.
+    </string>
+
+    <!-- Braga -->
+    <string name="bra">Braga, PT</string>
+    <string name="bra_price">$63</string>
+    <string name="bra_description">
+        Braga is considered the most religious town in Portugal. Portugal’s third largest city has so many churches and monuments, trying to see them all on a day trip from Porto just can’t be done.
+    </string>
+
+    <!-- Viana do Castelo -->
+    <string name="via">Vian do Castelo, PT</string>
+    <string name="via_price">$83</string>
+    <string name="via_description">
+        Viana do Castelo is an historic port city that was one of the places Portuguese explorers headed to when they returned from their voyages of discovery.
+    </string>
+
+    <!-- contact agent -->
+    <string name="port_contact">Jose Cruz - jc@travelwithus.com  (555) 666-6666</string>
+
 </resources>
